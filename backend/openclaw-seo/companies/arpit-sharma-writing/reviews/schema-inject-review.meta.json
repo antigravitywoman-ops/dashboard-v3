@@ -1,0 +1,37 @@
+{
+  "review_type": "schema-review",
+  "target_url": "https://arpitsharmawriting.com/",
+  "status": "failed",
+  "score": 55,
+  "issues_found": 3,
+  "issues_resolved": 0,
+  "reviewer": "verification-agent",
+  "target_item": "task-arpit-sharma-writing-schema-inject-1773585000000",
+  "created_at": "2026-03-18T09:04:11.716265Z",
+  "updated_at": "2026-03-20T14:30:00.000Z",
+  "summary": "Schema review failed with score 55 — zero schema markup found on any page; Organization schema not implemented; Author credentials page missing.",
+  "highlights": [
+    "Zero schema markup found on any page — homepage, /about-me/, /stoics-mentorship-upsc/ all missing",
+    "Organization schema not implemented — NO-PERSON-SCHEMA gap",
+    "Author credentials page not found — NO-AUTHOR-CREDENTIALS-PAGE gap",
+    "WP_APP_PASSWORD is account login password, not Application Password — REST API blocked",
+    "PHP snippet option provided as manual workaround"
+  ],
+  "humanReadableSummary": {
+    "whatWasChecked": "Verified JSON-LD schema markup implementation including Organization, Person, and Author schemas across key pages.",
+    "whatPassed": [
+      "WordPress REST API accessible",
+      "Author credentials page accessible"
+    ],
+    "whatFailed": [
+      "Zero schema markup found on any page",
+      "Organization schema not implemented",
+      "Author credentials page not found"
+    ],
+    "nextAction": "Configure proper WordPress Application Password and implement Organization and Person schemas."
+  },
+  "human_decision": null,
+  "human_comment": null,
+  "human_reviewer": null,
+  "human_decision_at": null
+}

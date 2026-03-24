@@ -1,0 +1,140 @@
+{
+  "crawl_timestamp": "2026-03-15T08:30:00Z",
+  "crawl_meta": {
+    "start_url": "https://ranganiindia.com/",
+    "company": "rangani-engineering",
+    "crawled_at": "2026-03-15T08:30:00Z",
+    "total_pages": 6,
+    "page_limit": 50,
+    "crawler": "openclaw-seo/crawl-browser",
+    "version": "2.0",
+    "mode": "auto",
+    "spa_detected": false,
+    "summary": {
+      "http_200": 5,
+      "http_4xx": 1,
+      "errors": 0
+    }
+  },
+  "summary": {
+    "total_issues": 18,
+    "critical": 4,
+    "high": 6,
+    "medium": 5,
+    "low": 3,
+    "fixed": 0
+  },
+  "health_score": 34,
+  "meta_summary": "Site health is critical. Multiple high-severity issues: dual domain conflict (ranganiscrapbailer.com vs ranganiindia.com), missing Product schema, very low word count on key product pages, no structured data anywhere.",
+  "highlights": [
+    "Domain conflict: ranganiscrapbailer.com redirects to ranganiindia.com but both indexed",
+    "No JSON-LD schema on any product page",
+    "Homepage word count only 89 — extremely thin",
+    "GBP listing not claimed or verified",
+    "PageSpeed 45/100 on mobile",
+    "HTTP 404 on /products/ page"
+  ],
+  "critical_issues": [
+    {
+      "type": "DOMAIN_CONFLICT",
+      "severity": "CRITICAL",
+      "priority": "critical",
+      "message": "Dual domain (ranganiscrapbailer.com + ranganiindia.com) causing canonical conflict.",
+      "url": "https://ranganiindia.com/"
+    },
+    {
+      "type": "HTTP_404",
+      "severity": "CRITICAL",
+      "priority": "critical",
+      "message": "Products page returns 404.",
+      "url": "https://ranganiindia.com/products/"
+    },
+    {
+      "type": "MISSING_SCHEMA",
+      "severity": "CRITICAL",
+      "priority": "critical",
+      "message": "No Product or Organization schema on any page.",
+      "url": "https://ranganiindia.com/"
+    },
+    {
+      "type": "GBP_UNVERIFIED",
+      "severity": "CRITICAL",
+      "priority": "critical",
+      "message": "GBP listing not claimed. No local SEO signals.",
+      "url": "https://ranganiindia.com/"
+    }
+  ],
+  "high_issues": [
+    {
+      "type": "THIN_CONTENT",
+      "severity": "HIGH",
+      "priority": "high",
+      "message": "Homepage has only 89 words. Major content gap.",
+      "url": "https://ranganiindia.com/"
+    },
+    {
+      "type": "MISSING_META_DESC",
+      "severity": "HIGH",
+      "priority": "high",
+      "message": "Homepage and 4 other pages missing meta descriptions.",
+      "url": "https://ranganiindia.com/"
+    },
+    {
+      "type": "NO_H1",
+      "severity": "HIGH",
+      "priority": "high",
+      "message": "Product pages missing H1 tags.",
+      "url": "https://ranganiindia.com/products/hydraulic-baling-press/"
+    },
+    {
+      "type": "SLOW_PAGE_SPEED",
+      "severity": "HIGH",
+      "priority": "high",
+      "message": "Mobile PageSpeed 45/100 across all pages.",
+      "url": "https://ranganiindia.com/"
+    },
+    {
+      "type": "MISSING_ALT_TEXT",
+      "severity": "HIGH",
+      "priority": "high",
+      "message": "All product images missing alt text.",
+      "url": "https://ranganiindia.com/products/"
+    },
+    {
+      "type": "NO_OPENGRAPH",
+      "severity": "HIGH",
+      "priority": "high",
+      "message": "No Open Graph tags on any page.",
+      "url": "https://ranganiindia.com/"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://ranganiindia.com/",
+      "status": 200,
+      "title": "Rangani Engineering — Hydraulic Baling Press & Scrap Processing Machines",
+      "h1": "Rangani Engineering",
+      "meta_desc": "",
+      "canonical": "",
+      "word_count": 89
+    },
+    {
+      "url": "https://ranganiindia.com/products/",
+      "status": 404,
+      "title": "",
+      "h1": "",
+      "meta_desc": "",
+      "canonical": "",
+      "word_count": 0
+    },
+    {
+      "url": "https://ranganiindia.com/products/hydraulic-baling-press/",
+      "status": 200,
+      "title": "Hydraulic Baling Press Manufacturer — Rangani Engineering",
+      "h1": "",
+      "meta_desc": "",
+      "canonical": "https://ranganiindia.com/products/hydraulic-baling-press/",
+      "word_count": 156
+    }
+  ]
+}

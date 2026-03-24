@@ -1,0 +1,18 @@
+{
+  "category": "scope",
+  "last_reviewed": null,
+  "review_status": "pending",
+  "linked_sheets": [],
+  "version": 1,
+  "author": "seo-orchestrator",
+  "created_at": "2026-03-18T09:04:11.713637Z",
+  "updated_at": "2026-03-22T00:00:00.000Z",
+  "summary": "Operator-defined scope — WP content and on-page SEO active; image generation and video out; LinkedIn/Reddit/Quora/Medium distribution enabled.",
+  "highlights": [
+    "In scope: WP blog posts, meta/schema injection, on-page fixes, internal linking",
+    "Social active: LinkedIn, Reddit, Quora, Medium canonical syndication",
+    "Out of scope: YouTube, Instagram, Facebook, image generation, Google Ads",
+    "Cadence: 1 new post/week, 2 refreshes/week, 3 on-page fixes/cycle",
+    "Max 1 Reddit post/subreddit/week; 3 Quora answers/day; 1 LinkedIn post/topic/14 days"
+  ]
+}

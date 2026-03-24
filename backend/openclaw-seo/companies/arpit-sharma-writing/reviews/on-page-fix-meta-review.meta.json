@@ -1,0 +1,36 @@
+{
+  "review_type": "on-page-review",
+  "target_url": "https://arpitsharmawriting.com/",
+  "status": "failed",
+  "score": 60,
+  "issues_found": 3,
+  "issues_resolved": 0,
+  "reviewer": "verification-agent",
+  "target_item": "task-arpit-sharma-writing-on-page-fix-meta-1773585060000",
+  "created_at": "2026-03-18T09:04:11.713637Z",
+  "updated_at": "2026-03-20T14:30:00.000Z",
+  "summary": "On-page review failed with score 60 — 3 critical issues found: duplicate H1 across 3 pages, missing meta descriptions, missing canonical tag.",
+  "highlights": [
+    "3 pages have duplicate H1: 'Arpit Sharma' across homepage, /about-me/, /stoics-mentorship-upsc/",
+    "All 3 pages missing meta descriptions — CRITICAL gap",
+    "Homepage missing canonical tag — CRITICAL",
+    "WP_APP_PASSWORD blocked REST API execution — requires human action"
+  ],
+  "humanReadableSummary": {
+    "whatWasChecked": "Tested on-page SEO elements (H1 tags, meta descriptions, canonical tags) across the homepage, about page, and mentorship page.",
+    "whatPassed": [
+      "Pages load correctly",
+      "Content structure present"
+    ],
+    "whatFailed": [
+      "3 pages have duplicate H1 headings",
+      "All pages missing meta descriptions",
+      "Homepage missing canonical tag"
+    ],
+    "nextAction": "Add unique H1 tags, meta descriptions to all pages, and fix canonical tags before publishing."
+  },
+  "human_decision": null,
+  "human_comment": null,
+  "human_reviewer": null,
+  "human_decision_at": null
+}

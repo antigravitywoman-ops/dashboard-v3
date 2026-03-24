@@ -1,0 +1,16 @@
+{
+  "category": "missing-dependencies",
+  "last_reviewed": null,
+  "review_status": "pending",
+  "linked_sheets": [],
+  "version": 1,
+  "author": "seo-orchestrator",
+  "created_at": "2026-03-18T09:04:25.972716Z",
+  "updated_at": "2026-03-22T00:00:00.000000Z",
+  "summary": "Living dependency tracker — all HIGH priority API credentials missing; WP credentials and social tokens also missing. All marketing automation blocked.",
+  "highlights": [
+    "HIGH missing: Google SA, GA4, GSC, Serper API, Firecrawl API",
+    "MEDIUM missing: WP credentials, Reddit/Quora/LinkedIn tokens",
+    "Plans: onpage-checklist present; offpage and technical checklists missing"
+  ]
+}

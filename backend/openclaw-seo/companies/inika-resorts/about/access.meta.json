@@ -1,0 +1,16 @@
+{
+  "category": "access",
+  "last_reviewed": null,
+  "review_status": "pending",
+  "linked_sheets": [],
+  "version": 1,
+  "author": "seo-orchestrator",
+  "created_at": "2026-03-18T09:04:36.486414Z",
+  "updated_at": "2026-03-22T00:00:00.000000Z",
+  "summary": "System access and platform integrations — WordPress CMS, GBP, GSC, GA4 configured; API credentials partially missing.",
+  "highlights": [
+    "GBP: Active, owner access confirmed",
+    "WordPress: Admin URL identified, credentials pending",
+    "Missing: Google Service Account, Serper API, Firecrawl API"
+  ]
+}

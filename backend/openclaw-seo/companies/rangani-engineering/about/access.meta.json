@@ -1,0 +1,16 @@
+{
+  "category": "access",
+  "last_reviewed": null,
+  "review_status": "pending",
+  "linked_sheets": [],
+  "version": 1,
+  "author": "seo-orchestrator",
+  "created_at": "2026-03-22T00:00:00.000000Z",
+  "updated_at": "2026-03-22T00:00:00.000000Z",
+  "summary": "System access and platform integrations — WordPress CMS, GSC, GA4, API credentials partially configured.",
+  "highlights": [
+    "Primary sites: ranganiindia.com + ranganiscrapbailer.com",
+    "Missing: Google SA JSON, Serper API, Firecrawl API, WP credentials",
+    "Open: Canonical URL conflict between two domains"
+  ]
+}

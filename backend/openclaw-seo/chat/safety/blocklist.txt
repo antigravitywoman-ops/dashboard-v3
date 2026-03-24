@@ -1,0 +1,39 @@
+# Security Blocklist - Patterns to block in chat
+# One regex pattern per line. Lines starting with # are comments.
+
+# Command injection
+rm -rf
+rm\s+-rf
+sudo\s+
+chmod\s+777
+wget\s+
+curl\s+
+nc\s+
+bash\s+-c
+sh\s+-c
+
+# Path traversal
+\.\.\/
+\.\.\.\/
+
+# SQL injection patterns (basic)
+UNION\s+SELECT
+INSERT\s+INTO
+DELETE\s+FROM
+DROP\s+TABLE
+ALTER\s+TABLE
+
+# Prompt injection attempts
+忽略之前的指令
+override\s+instructions
+bypass\s+security
+system\s+prompt
+hidden\s+instructions
+
+# Dangerous file operations
+\/etc\/passwd
+\/etc\/shadow
+\/etc\/sudoers
+~/.ssh/
+authorized_keys
+id_rsa

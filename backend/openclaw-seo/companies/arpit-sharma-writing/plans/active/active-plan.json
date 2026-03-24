@@ -1,0 +1,353 @@
+{
+  "company": "arpit-sharma-writing",
+  "report_period": "2026-03",
+  "plan_version": "1.0",
+  "generated_at": "2026-03-15T14:30:00.000Z",
+  "generated_by": "model-local (build-plan agent — VM API exhausted)",
+  "current_week": 1,
+  "current_week_label": "Week 1 (Mar 16-22)",
+  "current_phase": "Foundation",
+  "total_tasks": 6,
+  "completed_tasks": 1,
+  "pending_tasks": 2,
+  "blocked_tasks": 3,
+  "progress_percent": 17,
+  "scope_constraints": {
+    "max_content_drafts_per_week": 1,
+    "max_website_edits_per_cycle": 3,
+    "max_refresh_tasks_per_week": 2,
+    "image_generation_active": false,
+    "youtube_active": false,
+    "gbp_posts_active": false
+  },
+  "missing_credentials": [
+    "GOOGLE_SERVICE_ACCOUNT_JSON",
+    "GA4_PROPERTY_ID",
+    "GSC_SITE_URL",
+    "SERPER_API_KEY",
+    "FIRECRAWL_API_KEY",
+    "REDDIT_CLIENT_ID",
+    "LINKEDIN_ACCESS_TOKEN",
+    "MEDIUM_INTEGRATION_TOKEN",
+    "QUORA_SESSION_TOKEN"
+  ],
+  "credential_note": "GSC/GA4/Serper/Firecrawl missing — analytics and rank-track tasks will be skipped until configured. WordPress REST API is available.",
+  "tasks": [
+    {
+      "id": "task-arpit-week1-001",
+      "title": "Inject Person + Organization + WebSite schema (3 pages)",
+      "status": "blocked",
+      "owner": "content-publisher",
+      "priority": "critical",
+      "type": "schema-inject",
+      "details": "Schema approved, WP_APP_PASSWORD misconfigured — needs human fix",
+      "estimated_hours": 1,
+      "dependencies": [
+        "WP_APP_PASSWORD fix"
+      ]
+    },
+    {
+      "id": "task-arpit-week1-002",
+      "title": "Fix meta descriptions + H1 tags on 3 pages",
+      "status": "blocked",
+      "owner": "content-publisher",
+      "priority": "critical",
+      "type": "on-page-fix",
+      "details": "Approved copy ready for homepage, /about-me/, /stoics-mentorship-upsc/",
+      "estimated_hours": 1,
+      "dependencies": [
+        "WP_APP_PASSWORD fix"
+      ]
+    },
+    {
+      "id": "task-arpit-week1-003",
+      "title": "Set up GSC + GA4 (human action required)",
+      "status": "pending",
+      "owner": "HUMAN",
+      "priority": "high",
+      "type": "waiting-human",
+      "details": "Instructions provided in schema-inject-review.md",
+      "estimated_hours": 2,
+      "dependencies": []
+    },
+    {
+      "id": "task-arpit-week1-004",
+      "title": "Verify homepage canonical tag fix",
+      "status": "pending",
+      "owner": "content-publisher",
+      "priority": "high",
+      "type": "on-page-fix",
+      "details": "Homepage canonical tag — currently MISSING",
+      "estimated_hours": 0.5,
+      "dependencies": [
+        "WP_APP_PASSWORD fix"
+      ]
+    },
+    {
+      "id": "task-arpit-week1-005",
+      "title": "Generate /books/the-answers-within/ landing page",
+      "status": "completed",
+      "owner": "content-writer",
+      "priority": "high",
+      "type": "content-draft",
+      "details": "New page content drafted, KD: 8, Vol: 210",
+      "estimated_hours": 3,
+      "dependencies": []
+    },
+    {
+      "id": "task-arpit-week1-006",
+      "title": "Publish book landing page to WordPress",
+      "status": "pending",
+      "owner": "content-publisher",
+      "priority": "high",
+      "type": "content-publish",
+      "details": "Awaiting WP credentials fix before publishing",
+      "estimated_hours": 1,
+      "dependencies": [
+        "task-arpit-week1-005",
+        "WP_APP_PASSWORD fix"
+      ]
+    }
+  ],
+  "success_metrics": {
+    "schema_implemented": {
+      "target": "1",
+      "current": "—",
+      "done": false
+    },
+    "pages_with_meta_fixed": {
+      "target": "3",
+      "current": "—",
+      "done": false
+    },
+    "pages_with_unique_h1": {
+      "target": "3",
+      "current": "—",
+      "done": false
+    },
+    "content_published": {
+      "target": "1",
+      "current": "—",
+      "done": false
+    },
+    "analytics_configured": {
+      "target": "1",
+      "current": "—",
+      "done": false
+    }
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "label": "Week 1 (Mar 16–22)",
+      "phase": "Foundation",
+      "focus": "Technical Audit + Schema Baseline + Analytics Setup",
+      "key_deliverables": "Person+Org schema live, canonical fixed, all 4 pages have unique meta+H1, GSC/GA4 setup (human)",
+      "task_types_queued": [
+        "schema-inject",
+        "on-page-fix",
+        "waiting-human"
+      ],
+      "status": "completed"
+    },
+    {
+      "week": 2,
+      "label": "Week 2 (Mar 23–29)",
+      "phase": "Foundation",
+      "focus": "Homepage Rebuild + Book Landing Pages + Mentorship Page Expansion",
+      "key_deliverables": "Homepage rewrite, /books/the-answers-within/ new page, /books/far-from-pretension/ new page, mentorship page expanded",
+      "task_types_queued": [
+        "blog-generate",
+        "on-page-fix"
+      ],
+      "status": "active"
+    },
+    {
+      "week": 3,
+      "label": "Week 3 (Mar 30–Apr 5)",
+      "phase": "Foundation",
+      "focus": "First Blog Posts + External Profile Setup",
+      "key_deliverables": "3 blog posts published, LinkedIn profile, Quora profile active",
+      "task_types_queued": [
+        "blog-generate",
+        "post-linkedin",
+        "post-quora"
+      ],
+      "status": "pending"
+    },
+    {
+      "week": 4,
+      "label": "Week 4 (Apr 6–12)",
+      "phase": "Foundation",
+      "focus": "Content Velocity + Medium Syndication + Internal Linking",
+      "key_deliverables": "3 more posts, 2 Medium cross-posts, internal linking map built",
+      "task_types_queued": [
+        "blog-generate",
+        "post-medium",
+        "on-page-fix"
+      ],
+      "status": "pending"
+    },
+    {
+      "week": 5,
+      "label": "Week 5 (Apr 13–19)",
+      "phase": "Growth",
+      "focus": "Pillar Content — Writer in India + Self-Help Cluster",
+      "task_types_queued": [
+        "blog-generate"
+      ],
+      "status": "pending"
+    },
+    {
+      "week": 6,
+      "label": "Week 6 (Apr 20–26)",
+      "phase": "Growth",
+      "focus": "UPSC Content Cluster + First Location Page (Bhopal)",
+      "task_types_queued": [
+        "blog-generate",
+        "on-page-fix"
+      ],
+      "status": "pending"
+    },
+    {
+      "week": 7,
+      "label": "Week 7 (Apr 27–May 3)",
+      "phase": "Growth",
+      "focus": "Guest Post Outreach + Deep Work Content",
+      "task_types_queued": [
+        "blog-generate",
+        "outreach-drafter"
+      ],
+      "status": "pending"
+    },
+    {
+      "week": 8,
+      "label": "Week 8 (May 4–10)",
+      "phase": "Growth",
+      "focus": "Book Comparison Content + Delhi Location Page",
+      "task_types_queued": [
+        "blog-generate",
+        "on-page-fix",
+        "post-medium"
+      ],
+      "status": "pending"
+    },
+    {
+      "week": 9,
+      "label": "Week 9 (May 11–17)",
+      "phase": "Scale",
+      "focus": "Location Pages Batch + Content Refresh",
+      "task_types_queued": [
+        "blog-generate",
+        "on-page-fix"
+      ],
+      "status": "pending"
+    },
+    {
+      "week": 10,
+      "label": "Week 10 (May 18–24)",
+      "phase": "Scale",
+      "focus": "Reddit/Quora Sprint + Remaining Location Pages",
+      "task_types_queued": [
+        "blog-generate",
+        "post-reddit",
+        "post-quora",
+        "on-page-fix"
+      ],
+      "status": "pending"
+    },
+    {
+      "week": 11,
+      "label": "Week 11 (May 25–31)",
+      "phase": "Scale",
+      "focus": "LinkedIn Thought Leadership + Downloadable Assets",
+      "task_types_queued": [
+        "blog-generate",
+        "post-linkedin",
+        "on-page-fix"
+      ],
+      "status": "pending"
+    },
+    {
+      "week": 12,
+      "label": "Week 12 (Jun 1–7)",
+      "phase": "Scale",
+      "focus": "Performance Audit + Schema Expansion + Month 3 Planning",
+      "task_types_queued": [
+        "technical-audit",
+        "schema-inject",
+        "generate-report"
+      ],
+      "status": "pending"
+    }
+  ],
+  "content_calendar": {
+    "week1": {
+      "posts": [],
+      "note": "No blog posts — technical foundation week"
+    },
+    "week2": {
+      "posts": [
+        {
+          "url_slug": "books/the-answers-within",
+          "type": "new-page",
+          "kd": 8,
+          "vol": 210
+        },
+        {
+          "url_slug": "books/far-from-pretension",
+          "type": "new-page",
+          "kd": 6,
+          "vol": 50
+        }
+      ]
+    },
+    "week3": {
+      "posts": [
+        {
+          "url_slug": "blog/my-author-journey",
+          "keyword": "Indian author journey blog",
+          "kd": 10,
+          "vol": 170
+        },
+        {
+          "url_slug": "blog/upsc-preparation-working-professionals",
+          "keyword": "UPSC preparation for working professionals",
+          "kd": 38,
+          "vol": 2700
+        },
+        {
+          "url_slug": "blog/upsc-accountability-partner",
+          "keyword": "UPSC accountability partner",
+          "kd": 12,
+          "vol": 390
+        }
+      ]
+    },
+    "week4": {
+      "posts": [
+        {
+          "url_slug": "blog/overcoming-self-doubt",
+          "keyword": "overcoming self-doubt tips",
+          "kd": 32,
+          "vol": 2400
+        },
+        {
+          "url_slug": "blog/writing-your-first-book-tips",
+          "keyword": "writing your first book tips",
+          "kd": 27,
+          "vol": 1800
+        },
+        {
+          "url_slug": "blog/ambition-and-self-doubt",
+          "keyword": "how to deal with ambition and self-doubt",
+          "kd": 15,
+          "vol": 480
+        }
+      ]
+    }
+  },
+  "next_delta_eval": "2026-03-22",
+  "notes": "Week 1 tasks queued: schema-inject (Person+Org), on-page-fix (4 pages meta+H1+canonical), waiting-human (GSC/GA4). 3 tasks BLOCKED — WP_APP_PASSWORD misconfigured. WordPress REST API available. All analytics/rank-track tasks blocked until GOOGLE_SERVICE_ACCOUNT_JSON and SERPER_API_KEY configured. 1 content-draft completed (/books/the-answers-within/).",
+  "updated_at": "2026-03-24T12:27:33.806Z"
+}

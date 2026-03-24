@@ -1,0 +1,16 @@
+{
+  "category": "scope",
+  "last_reviewed": null,
+  "review_status": "pending",
+  "linked_sheets": [],
+  "version": 1,
+  "author": "seo-orchestrator",
+  "created_at": "2026-03-18T09:04:25.972716Z",
+  "updated_at": "2026-03-22T00:00:00.000000Z",
+  "summary": "Operator-defined capability scope — WP content publishing, LinkedIn/Reddit/Quora/Medium distribution, technical audits enabled; image generation and YouTube off.",
+  "highlights": [
+    "In scope: WP blog posts, meta/schema injection, LinkedIn posts",
+    "Social: LinkedIn, Reddit, Quora, Medium all active; YouTube inactive",
+    "Out of scope: AI image generation, video, Instagram, Facebook"
+  ]
+}

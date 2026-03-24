@@ -1,0 +1,16 @@
+{
+  "category": "missing-dependencies",
+  "last_reviewed": null,
+  "review_status": "pending",
+  "linked_sheets": [],
+  "version": 1,
+  "author": "seo-orchestrator",
+  "created_at": "2026-03-22T00:00:00.000000Z",
+  "updated_at": "2026-03-22T00:00:00.000000Z",
+  "summary": "Living dependency tracker — HIGH: Google SA JSON, Serper API, Firecrawl API missing; MEDIUM: WP credentials and social tokens pending.",
+  "highlights": [
+    "HIGH missing: Google SA JSON, Serper API, Firecrawl API",
+    "MEDIUM missing: WP credentials, Reddit tokens, Quora token",
+    "Plan files missing: onpage, offpage, technical checklists"
+  ]
+}

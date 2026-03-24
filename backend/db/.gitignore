@@ -1,0 +1,38 @@
+# Environment & secrets
+.env
+*.env
+.env.*
+
+# Company operational data (stays on VM only, not committed)
+companies/*/memory/
+companies/*/reports/
+companies/*/archive/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Python virtual environment
+.venv/
+venv/
+
+# Runtime state (not committed)
+memory/episodic-log.txt
+memory/task-queue.json

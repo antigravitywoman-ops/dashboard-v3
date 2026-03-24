@@ -1,0 +1,35 @@
+{
+  "review_type": "schema-review",
+  "target_url": "https://inika-resorts.com/",
+  "status": "failed",
+  "score": 72,
+  "issues_found": 2,
+  "issues_resolved": 0,
+  "reviewer": "verification-agent",
+  "target_item": "task-inika-resorts-schema-impl-2026-03-17",
+  "created_at": "2026-03-17T09:04:25.972716Z",
+  "updated_at": "2026-03-20T14:30:00.000Z",
+  "highlights": [
+    "LodgingBusiness schema implemented correctly on homepage — PASS",
+    "HotelRoom schema added to deluxe cottage and family villa — PASS",
+    "FAQPage schema not implemented — was marked low priority in plan",
+    "Review schema missing — no review snippets in SERPs",
+    "Knowledge panel appearance only partial — action needed"
+  ],
+  "humanReadableSummary": {
+    "whatWasChecked": "Verified schema markup implementation for Inika Resorts including LodgingBusiness, HotelRoom, and Review schemas.",
+    "whatPassed": [
+      "LodgingBusiness schema correctly on homepage",
+      "HotelRoom schema on cottage pages"
+    ],
+    "whatFailed": [
+      "Review schema not implemented",
+      "Knowledge panel appears incomplete"
+    ],
+    "nextAction": "Add Review/ReviewAggregate schema to enable star ratings in search results."
+  },
+  "human_decision": null,
+  "human_comment": null,
+  "human_reviewer": null,
+  "human_decision_at": null
+}

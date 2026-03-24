@@ -1,0 +1,18 @@
+{
+  "category": "missing-dependencies",
+  "last_reviewed": null,
+  "review_status": "pending",
+  "linked_sheets": [],
+  "version": 1,
+  "author": "seo-orchestrator",
+  "created_at": "2026-03-18T09:04:11.713637Z",
+  "updated_at": "2026-03-22T00:00:00.000Z",
+  "summary": "3 HIGH priority API credentials missing (GA4, SERPER, FIRECRAWL); WP CMS fully configured; social tokens partially available.",
+  "highlights": [
+    "HIGH missing: GA4_PROPERTY_ID, SERPER_API_KEY, FIRECRAWL_API_KEY",
+    "MEDIUM missing: Reddit OAuth, LinkedIn, Quora, Medium tokens",
+    "WP credentials present: WP_SITE_URL, WP_USERNAME, WP_APP_PASSWORD",
+    "GSC connected; Google Service Account JSON present",
+    "Social: LinkedIn/Reddit/Quora/Medium distribution depends on token setup"
+  ]
+}

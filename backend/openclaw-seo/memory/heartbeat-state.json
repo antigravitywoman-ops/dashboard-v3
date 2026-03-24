@@ -1,0 +1,25 @@
+{
+  "last_delta_eval": "2026-03-18T19:57:00.000Z",
+  "total_cost_usd": 0,
+  "last_audit": "2026-03-18T19:57:00.000Z",
+  "meta_files_verified": 27,
+  "pending_content": [
+    {
+      "file": "books-the-answers-within.md",
+      "gate_status": "pending",
+      "word_count": 896
+    }
+  ],
+  "blocked_tasks": [
+    {
+      "id": "task-arpit-sharma-writing-website-edit-1773649802002",
+      "type": "navigation-menu",
+      "blocker": "requires-manual-WP-admin"
+    },
+    {
+      "id": "task-arpit-sharma-writing-technical-audit-1773662401724",
+      "type": "technical-audit",
+      "blocker": "FIRECRAWL_API_KEY-missing"
+    }
+  ]
+}

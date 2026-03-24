@@ -1,0 +1,34 @@
+{
+  "active": [
+    {
+      "slug": "arpit-sharma-writing",
+      "name": "Arpit Sharma Writing",
+      "report_cadence": "monthly",
+      "industry": "personal-brand",
+      "timezone": "Asia/Kolkata"
+    }
+  ],
+  "paused": [
+    {
+      "slug": "inika-resorts",
+      "name": "Inika Resorts",
+      "report_cadence": "monthly",
+      "industry": "hospitality",
+      "timezone": "Asia/Kolkata"
+    },
+    {
+      "slug": "rangani-engineering",
+      "name": "Rangani Engineering Pvt. Ltd.",
+      "report_cadence": "monthly",
+      "industry": "industrial-manufacturing",
+      "timezone": "Asia/Kolkata"
+    }
+  ],
+  "schema_version": "2",
+  "notes": "Managed by seo-orchestrator. Add new company slugs after running wf-company-onboarding. Set report_cadence to 'monthly' or 'quarterly'. Move to paused when engagement ends.",
+  "report_cadence_options": {
+    "monthly": "Full 14-sheet report generated once per month. Period key format: YYYY-MM",
+    "quarterly": "Full 14-sheet report generated once per quarter. Period key format: YYYY-QN",
+    "weekly": "Full report every week. Period key format: YYYY-WNN. High cost — use only if contractually required."
+  }
+}

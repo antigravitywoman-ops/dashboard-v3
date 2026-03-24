@@ -1,0 +1,96 @@
+{
+  "plan_id": "inika-resorts-plan-2026-03-week1",
+  "company": "inika-resorts",
+  "created_at": "2026-03-17T14:00:00Z",
+  "week_start": "2026-03-17",
+  "week_end": "2026-03-23",
+  "status": "active",
+  "priority_focus": "Foundation & Quick Wins",
+  "total_tasks": 8,
+  "completed_tasks": 0,
+  "pending_tasks": 8,
+  "blocked_tasks": 0,
+  "in_progress_tasks": 0,
+  "progress_percent": 0,
+  "tasks": [
+    {
+      "id": "task-inika-week1-001",
+      "title": "Fix 404 error on /rooms/suite/",
+      "status": "pending",
+      "owner": "content-publisher",
+      "priority": "high",
+      "estimated_hours": 1,
+      "dependencies": []
+    },
+    {
+      "id": "task-inika-week1-002",
+      "title": "Add alt text to 8 images across site",
+      "status": "pending",
+      "owner": "content-publisher",
+      "priority": "high",
+      "estimated_hours": 2,
+      "dependencies": []
+    },
+    {
+      "id": "task-inika-week1-003",
+      "title": "Implement LodgingBusiness schema on homepage",
+      "status": "pending",
+      "owner": "content-publisher",
+      "priority": "critical",
+      "estimated_hours": 2,
+      "dependencies": []
+    },
+    {
+      "id": "task-inika-week1-004",
+      "title": "Add 10 more photos to GBP",
+      "status": "pending",
+      "owner": "content-publisher",
+      "priority": "high",
+      "estimated_hours": 1,
+      "dependencies": []
+    },
+    {
+      "id": "task-inika-week1-005",
+      "title": "Seed 10 new Q&A pairs on GBP",
+      "status": "pending",
+      "owner": "content-publisher",
+      "priority": "medium",
+      "estimated_hours": 1,
+      "dependencies": []
+    },
+    {
+      "id": "task-inika-week1-006",
+      "title": "Publish blog post: Top Places to Visit in Coorg",
+      "status": "pending",
+      "owner": "content-writer",
+      "priority": "high",
+      "estimated_hours": 4,
+      "dependencies": []
+    },
+    {
+      "id": "task-inika-week1-007",
+      "title": "Expand About page to 600+ words",
+      "status": "pending",
+      "owner": "content-writer",
+      "priority": "medium",
+      "estimated_hours": 2,
+      "dependencies": []
+    },
+    {
+      "id": "task-inika-week1-008",
+      "title": "Create wedding packages page",
+      "status": "pending",
+      "owner": "content-writer",
+      "priority": "medium",
+      "estimated_hours": 3,
+      "dependencies": []
+    }
+  ],
+  "success_metrics": {
+    "technical_issues_fixed": { "target": "3", "current": "—", "done": false },
+    "content_published": { "target": "2", "current": "—", "done": false },
+    "gbp_improvements": { "target": "2", "current": "—", "done": false },
+    "schema_implemented": { "target": "1", "current": "—", "done": false }
+  },
+  "notes": "Company currently PAUSED - tasks on hold. This plan activates when company status changes to active."
+}

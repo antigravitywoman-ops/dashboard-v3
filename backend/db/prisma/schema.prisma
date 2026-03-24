@@ -1,0 +1,116 @@
+// db/prisma/schema.prisma
+// SEO Dashboard Database Schema
+// PostgreSQL + Prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================
+// ENUMS
+// ============================================
+
+/// User's global role in the system
+enum Role {
+  MASTER       // Full access to all companies, can manage users
+  COMPANY_ADMIN // Can manage users within their assigned companies
+  VIEWER       // Read-only access to assigned companies
+}
+
+/// User's role within a specific company
+enum CompanyRole {
+  ADMIN        // Can edit files, manage tasks, manage company users
+  EDITOR       // Can edit content, manage tasks
+  VIEWER       // Read-only
+}
+
+// ============================================
+// USER MANAGEMENT
+// ============================================
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  passwordHash  String?   // null if using OAuth
+  role          Role      @default(VIEWER)
+  avatarUrl     String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  // Relations
+  companies     UserCompany[]
+  chatHistory   ChatMessage[]
+  sessions      Session[]
+
+  // Indexes for performance
+  @@index([email])
+  @@index([role])
+}
+
+/// Active user sessions
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expires])
+}
+
+// ============================================
+// COMPANY PERMISSIONS
+// ============================================
+
+/// Many-to-many relationship between users and companies
+model UserCompany {
+  userId      String
+  companyId   String    // matches slug from openclaw-seo
+  role        CompanyRole @default(VIEWER)
+  assignedAt  DateTime  @default(now())
+  assignedBy  String?   // userId of who assigned
+
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, companyId])
+  @@index([companyId])
+}
+
+// ============================================
+// CHAT HISTORY
+// ============================================
+
+/// Store chat messages for analytics and context
+model ChatMessage {
+  id          String   @id @default(cuid())
+  userId      String
+  companyId   String
+  role        String   // "user" or "assistant"
+  content     String
+  filePath    String?  // which file was being edited
+  tokens      Int?     // token count for analytics
+  createdAt   DateTime @default(now())
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([companyId, createdAt])
+  @@index([userId, createdAt])
+}
+
+// ============================================
+// SYSTEM CONFIG (Optional)
+// ============================================
+
+/// Cache configuration and settings
+model SystemConfig {
+  key         String   @id
+  value       Json
+  updatedAt   DateTime @updatedAt
+}

@@ -1,0 +1,29 @@
+{
+  "week": "2026-W12",
+  "week_start": "2026-W12-01",
+  "week_end": null,
+  "status": "active",
+  "total_tasks": 4,
+  "completed_tasks": 2,
+  "pending_tasks": 0,
+  "blocked_tasks": 2,
+  "in_progress_tasks": 0,
+  "progress_percent": 50,
+  "focus_areas": ["on-page-optimization", "technical-fixes"],
+  "gaps_addressed": ["EMPTY-META-DESCRIPTIONS", "DUPLICATE-H1-TAGS"],
+  "priority_tasks": [
+    "task-arpit-sharma-writing-website-edit-1773649802002",
+    "task-arpit-sharma-writing-technical-audit-1773662401724"
+  ],
+  "notes": "2 tasks completed: meta descriptions added, H1 tags fixed. 2 tasks blocked awaiting manual WP admin access and FIRECRAWL_API_KEY.",
+  "created_at": "2026-03-18T09:04:11.709161Z",
+  "updated_at": "2026-03-22T00:00:00.000Z",
+  "last_heartbeat_at": "2026-03-22T00:00:00.000Z",
+  "summary": "W12 active execution week — 2 of 4 tasks completed (meta descriptions, H1 tags); 2 blocked tasks awaiting WP admin access and FIRECRAWL_API_KEY.",
+  "highlights": [
+    "2 completed: meta descriptions added to 3 pages, duplicate H1 tags fixed",
+    "2 blocked: website-edit task awaiting WP admin access",
+    "1 blocked: technical-audit task awaiting FIRECRAWL_API_KEY",
+    "Focus: on-page optimization and technical fixes; homepage rebuild in progress"
+  ]
+}

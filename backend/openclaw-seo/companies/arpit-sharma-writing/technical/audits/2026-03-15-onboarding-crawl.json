@@ -1,0 +1,84 @@
+{
+  "crawl_meta": {
+    "start_url": "https://arpitsharmawriting.com/",
+    "company": "arpit-sharma-writing",
+    "crawled_at": "2026-03-15T12:31:12.701Z",
+    "total_pages": 4,
+    "page_limit": 50,
+    "crawler": "openclaw-seo/crawl-browser",
+    "version": "2.0",
+    "mode": "auto",
+    "spa_detected": false,
+    "server_routing_broken": false,
+    "summary": {
+      "http_200": 4,
+      "js_route_only": 0,
+      "dead_route": 0,
+      "http_4xx": 0,
+      "errors": 0
+    }
+  },
+  "critical_issues": [
+    {
+      "type": "MISSING_CANONICAL_HOMEPAGE",
+      "severity": "MEDIUM",
+      "priority": "medium",
+      "message": "Homepage has no canonical tag.",
+      "url": "https://arpitsharmawriting.com/"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://arpitsharmawriting.com/",
+      "status": 200,
+      "url_type": "HTTP_200",
+      "title": "Arpit Sharma",
+      "h1": "Arpit Sharma",
+      "meta_desc": "",
+      "canonical": "",
+      "word_count": 16,
+      "internal_links": [
+        "https://arpitsharmawriting.com/about-me/",
+        "https://arpitsharmawriting.com/stoics-mentorship-upsc/"
+      ]
+    },
+    {
+      "url": "https://arpitsharmawriting.com/about-me/",
+      "status": 200,
+      "url_type": "HTTP_200",
+      "title": "About Me – Arpit Sharma",
+      "h1": "Arpit Sharma",
+      "meta_desc": "",
+      "canonical": "https://arpitsharmawriting.com/about-me/",
+      "word_count": 382,
+      "internal_links": [
+        "https://arpitsharmawriting.com/category/uncategorized/",
+        "https://arpitsharmawriting.com/stoics-mentorship-upsc/"
+      ]
+    },
+    {
+      "url": "https://arpitsharmawriting.com/stoics-mentorship-upsc/",
+      "status": 200,
+      "url_type": "HTTP_200",
+      "title": "Stoics Mentorship Details for 2027 UPSC Civil Services – Arpit Sharma",
+      "h1": "Arpit Sharma",
+      "meta_desc": "",
+      "canonical": "https://arpitsharmawriting.com/stoics-mentorship-upsc/",
+      "word_count": 267,
+      "internal_links": [
+        "https://arpitsharmawriting.com/category/uncategorized/"
+      ]
+    },
+    {
+      "url": "https://arpitsharmawriting.com/category/uncategorized/",
+      "status": 200,
+      "url_type": "HTTP_200",
+      "title": "Uncategorized – Arpit Sharma",
+      "h1": "Arpit Sharma",
+      "meta_desc": "",
+      "canonical": "",
+      "word_count": 16,
+      "internal_links": []
+    }
+  ]
+}

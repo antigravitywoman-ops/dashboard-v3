@@ -1,0 +1,17 @@
+{
+  "category": "audience",
+  "last_reviewed": null,
+  "review_status": "pending",
+  "linked_sheets": [],
+  "version": 1,
+  "author": "seo-orchestrator",
+  "created_at": "2026-03-18T09:04:11.709161Z",
+  "updated_at": "2026-03-22T00:00:00.000Z",
+  "summary": "Four target personas covering self-help readers, UPSC aspirants, young writers, and general growth readers.",
+  "highlights": [
+    "Primary: Overwhelmed achievers 26-35 seeking purpose and resilience",
+    "High-intent: UPSC aspirants 24-30 needing structured mentorship",
+    "Aspiring writer: 17-25 readers wanting publishing guidance in India",
+    "Secondary: Voracious non-fiction readers seeking authentic Indian voice"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "crawl_timestamp": "2026-03-15T10:00:00Z",
+  "crawl_meta": {
+    "start_url": "https://inikaresorts.com/",
+    "company": "inika-resorts",
+    "crawled_at": "2026-03-15T10:00:00Z",
+    "total_pages": 8,
+    "page_limit": 50,
+    "crawler": "openclaw-seo/crawl-browser",
+    "version": "2.0",
+    "mode": "auto",
+    "spa_detected": false,
+    "summary": {
+      "http_200": 8,
+      "http_4xx": 0,
+      "errors": 0
+    }
+  },
+  "summary": {
+    "total_issues": 12,
+    "critical": 2,
+    "high": 4,
+    "medium": 4,
+    "low": 2,
+    "fixed": 0
+  },
+  "health_score": 58,
+  "meta_summary": "Site structure is sound but LocalBusiness schema is missing across all pages. GBP signals not cross-linked. Mobile page speed below 60 on core pages.",
+  "highlights": [
+    "Missing LocalBusiness + Hotel schema on homepage",
+    "GBP not verified — no cross-linked signals",
+    "Mobile PageSpeed 58/100 — needs optimization",
+    "No internal linking between room types"
+  ],
+  "critical_issues": [
+    {
+      "type": "MISSING_SCHEMA",
+      "severity": "CRITICAL",
+      "priority": "critical",
+      "message": "No LocalBusiness schema on homepage.",
+      "url": "https://inikaresorts.com/"
+    },
+    {
+      "type": "GBP_NOT_VERIFIED",
+      "severity": "CRITICAL",
+      "priority": "critical",
+      "message": "Google Business Profile not verified.",
+      "url": "https://inikaresorts.com/"
+    }
+  ],
+  "high_issues": [
+    {
+      "type": "MISSING_META_DESC",
+      "severity": "HIGH",
+      "priority": "high",
+      "message": "Homepage missing meta description.",
+      "url": "https://inikaresorts.com/"
+    },
+    {
+      "type": "MISSING_ALT_TEXT",
+      "severity": "HIGH",
+      "priority": "high",
+      "message": "12 images missing alt text across room pages.",
+      "url": "https://inikaresorts.com/rooms/"
+    },
+    {
+      "type": "SLOW_PAGE_SPEED",
+      "severity": "HIGH",
+      "priority": "high",
+      "message": "Homepage mobile PageSpeed: 58/100.",
+      "url": "https://inikaresorts.com/"
+    },
+    {
+      "type": "MISSING_CANONICAL",
+      "severity": "HIGH",
+      "priority": "high",
+      "message": "No canonical tag on www vs non-www.",
+      "url": "https://inikaresorts.com/"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://inikaresorts.com/",
+      "status": 200,
+      "title": "Inika Resorts — Luxury Homestay in Coorg",
+      "h1": "Inika Resorts",
+      "meta_desc": "",
+      "canonical": "",
+      "word_count": 312
+    },
+    {
+      "url": "https://inikaresorts.com/rooms/",
+      "status": 200,
+      "title": "Rooms & Cottages — Inika Resorts",
+      "h1": "Our Rooms",
+      "meta_desc": "Luxury cottages and rooms in Coorg with stunning valley views.",
+      "canonical": "https://inikaresorts.com/rooms/",
+      "word_count": 245
+    },
+    {
+      "url": "https://inikaresorts.com/packages/honeymoon-special/",
+      "status": 200,
+      "title": "Honeymoon Packages — Inika Resorts Coorg",
+      "h1": "Honeymoon Special",
+      "meta_desc": "Romantic honeymoon packages in Coorg. Private cottage, candlelight dinner included.",
+      "canonical": "https://inikaresorts.com/packages/honeymoon-special/",
+      "word_count": 189
+    },
+    {
+      "url": "https://inikaresorts.com/contact/",
+      "status": 200,
+      "title": "Contact Us — Inika Resorts",
+      "h1": "Get in Touch",
+      "meta_desc": "Contact Inika Resorts for bookings and inquiries. Located in Coorg, Karnataka.",
+      "canonical": "https://inikaresorts.com/contact/",
+      "word_count": 98
+    }
+  ]
+}
